@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Game Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Game Survey Form</h1>
+      <p id="description">Thanks for your survey!</p>
+    </header>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Your Name
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label">Your Email
+          <input id="email" type="email" placeholder="Enter your email" required/>
+        </label>
+        <label for="age" id="number-label">Your Age
+          <input id="number" type="number" pattern="[0-9]{1,3}" min="8" max="100" placeholder="Age"required />
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What kind of game do you like best?</p>
+        <select id="dropdown">
+          <option disabled selected value="">Choose the type of game you like</option>
+          <option value="1">RPG</option>
+          <option value="2">MOBA</option>
+          <option value="3">FPS</option>
+          <option value-"4">Survival</option>
+        </select>
+        <p>How many hours a day do you play games:</p>
+        <label>
+          <input type="radio" name="radio" value=">3h" checked/>&lt;3 hours
+        </label>
+        <label>
+          <input type="radio" name="radio" value="<5h"/>&lt;5 hours
+        </label>
+        <label>
+          <input type="radio" name="radio" value="<8h"/>&lt;8 hours
+        </label>
+        <label>
+          <input type="radio" name="radio" value=">8h"/>&gt;8 hours
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>What do you play games on?</p>
+        <label>
+          <input type="checkbox" name="checkbox" value="pc" /> PC Gaming
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" value="laptop"/> Laptop Gaming
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" value="console"/> Console Gaming
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" value="handheld"/> Handheld Gaming
+        </label>
+        <label>
+          <input type="checkbox" name="checkbox" value="phone"/> Gaming Phone
+        </label>
+        <label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="Enter your coomment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  <footer>
+  </footer>
+  </body>
+</html>
